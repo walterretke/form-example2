@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 3 - Formulário</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="page">
+  <header>
+    <h1>Mentoria</h1>
+    <p>Preencha o formulário abaixo para<br/> realizar sua mentoria.</p>
+  </header>
+  <form id="my-form">
+    <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+         <div class="col-2">
+          <div class="input-wrapperflex">
+            <label for="name-mentory">Nome</label>
+            <input type="text" id="name-mentory" required>
+          </div>
+          <div class="input-wrapperflex">
+            <label for="lastname-mentory">Sobrenome</label>
+            <input type="text" id="lastname-mentory">
+          </div>
+         </div>
+         <div class="input-wrapperflex">
+          <label for="email-mentory">Email <span>(Digite um email válido)</span></label>
+          <input type="email" id="email-mentory" required>
+        </div>
+        <div class="input-wrapperflex">
+          <label for="password-mentory">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" id="password-mentory" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>INFORMAÇÕES DO MENTOR</legend>
+      <div class="input-wrapperflex">
+        <label for="name-mentor">Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+        <input type="text" id="name-mentor">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+      <P id="mentory-1-2">PRIMEIRA MENTORIA</P>
+      <div class="col-3">
+        <div class="input-wrapperflex">
+          <label for="date-mentory">Data <span>(DD/MM/AA)</span></label>
+          <input type="date" id="date-mentory" required>
+        </div>
+        
+        <div class="input-wrapperflex">
+          <label for="start-mentory">Das</label>
+          <input type="time" id="start-mentory">
+        </div>
+        <div class="input-wrapperflex">
+          <label for="finish-mentory">Até</label>
+          <input type="time" id="finish-mentory">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <P id="mentory-1-2">SEGUNDA MENTORIA</P>
+      <div class="col-3">
+        <div class="input-wrapperflex">
+          <label for="date-mentory">Data <span>(DD/MM/AA)</span></label>
+          <input type="date" id="date-mentory">
+        </div>
+        
+        <div class="input-wrapperflex">
+          <label for="start-mentory">Das</label>
+          <input type="time" id="start-mentory">
+        </div>
+        <div class="input-wrapperflex">
+          <label for="finish-mentory">Até</label>
+          <input type="time" id="finish-mentory">
+        </div>
+    </fieldset>
+  </form>
+
+  <footer>
+    <input 
+    class="button" 
+    type="submit" 
+    value="Salvar";
+    form="my-form">
+  </footer>
+
+</div>
+  
+</body>
+</html>
